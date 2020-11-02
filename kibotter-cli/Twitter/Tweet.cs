@@ -14,9 +14,16 @@ namespace kibotter_cli.Twitter
             {
                 Api = Tokens.Create(ut.ConsumerKey, ut.ConsumerSecret, ut.AccessToken, ut.AccessTokenSecret);
             }
-            catch
+            catch(TwitterException te)
             {
+                Console.WriteLine(te);
+                Environment.Exit(1);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
                 throw new Exception("Error : Failed to make Tokens.");
+                Environment.Exit(1);
             }
         }
 
@@ -26,9 +33,16 @@ namespace kibotter_cli.Twitter
             {
                 Api.Statuses.Update(status => text);
             }
-            catch
+            catch(TwitterException te)
             {
+                Console.WriteLine(te);
+                Environment.Exit(1);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
                 throw new Exception("Error : Failed to tweet.");
+                Environment.Exit(1);
             }
         }
     }

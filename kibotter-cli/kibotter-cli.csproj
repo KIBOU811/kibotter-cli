@@ -1,8 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyVersion>0.0.1.0</AssemblyVersion>
+    <Version>0.0.1.0</Version>
     <RootNamespace>kibotter_cli</RootNamespace>
   </PropertyGroup>
 

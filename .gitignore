@@ -431,3 +431,8 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# VersionUpdater
+Updater.exe
+VersionUpdater.dll
+VersionUpdater.runtimeconfig.json
